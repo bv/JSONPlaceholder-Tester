@@ -39,7 +39,6 @@ Then(/^The user's email format is correct$/) do
   puts " - the user's email is: #{the_email}"
 end
 
-#============
 When(/^I get user's posts$/) do
   @the_user_id = @the_user['id']
   get_posts_for_user_url = "#{posts_for_user_url()}#{@the_user_id}"
